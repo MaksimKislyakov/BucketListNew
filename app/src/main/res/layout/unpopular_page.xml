@@ -38,17 +38,16 @@
             android:layout_marginEnd="10dp"
             android:background="@drawable/container_for_town"
             tools:ignore="MissingConstraints" >
+
+
             <ImageButton
                 android:id="@+id/btn_like"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
+                android:background="@android:color/black"
                 android:src="@drawable/icon_btn_gray_heart"
-                android:background="@android:color/transparent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp"/>
+                tools:layout_editor_absoluteX="269dp"
+                tools:layout_editor_absoluteY="31dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
