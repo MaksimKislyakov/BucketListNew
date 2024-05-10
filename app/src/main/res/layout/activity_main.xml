@@ -6,30 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF4ED"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-    >
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_header"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:background="#B4C1A4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    tools:context=".MainActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        android:layout_width="412dp"
-        android:layout_height="48dp"
+        android:layout_width="409dp"
+        android:layout_height="91dp"
 
         android:background="@drawable/bottom_navigation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.725"
         app:menu="@menu/menu_btn" />
 
     <fragment
@@ -43,4 +34,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/navigation_fragment" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#B4C1A4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:contentDescription="button search"
+        android:id="@+id/btn_search"
+        android:layout_width="412dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#BBC3B2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

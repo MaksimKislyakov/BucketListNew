@@ -7,14 +7,45 @@
     android:background="@color/white"
     tools:context=".homeFragment">
 
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#B4C1A4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="90dp"
+        android:background="#EEF4ED"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create new task"
+        android:text="@string/unpopular"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/infoblock"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@drawable/shape_rounded_stroke"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

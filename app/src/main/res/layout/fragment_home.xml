@@ -8,7 +8,7 @@
     tools:context=".homeFragment">
 
     <TextView
-        android:layout_width="272dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Здесь пока что пусто, чтобы добавить места, которые вы
 посетили, воспользуйтесь кнопкой в виде сердечка"
