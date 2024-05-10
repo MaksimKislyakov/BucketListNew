@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.725"
         app:menu="@menu/menu_btn" />
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="409dp"
@@ -36,7 +36,6 @@
         app:navGraph="@navigation/navigation_fragment" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout_header"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:background="#B4C1A4"
@@ -45,7 +44,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:contentDescription="button search"
         android:id="@+id/btn_search"
         android:layout_width="412dp"
         android:layout_height="34dp"

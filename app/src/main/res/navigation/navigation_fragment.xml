@@ -14,10 +14,10 @@
         android:id="@+id/plusFragment"
         android:name="com.example.todo.plusFragment"
         android:label="fragment_plus"
-        tools:layout="@layout/fragment_plus" />
+        tools:layout="@layout/unpopular_page" />
     <fragment
         android:id="@+id/doneFragment"
         android:name="com.example.todo.doneFragment"
         android:label="fragment_done"
-        tools:layout="@layout/fragment_done" />
+        tools:layout="@layout/popular_page" />
 </navigation>

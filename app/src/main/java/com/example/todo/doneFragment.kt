@@ -34,7 +34,7 @@ class doneFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_done, container, false)
+        return inflater.inflate(R.layout.popular_page, container, false)
     }
 
     companion object {
