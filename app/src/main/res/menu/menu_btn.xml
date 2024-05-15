@@ -4,18 +4,18 @@
 
     <item
         android:title=""
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/icon_btn_unpopular"
+        android:id="@+id/unpopular"
+        />
+    <item
+        android:title=""
+        android:icon="@drawable/btn_home_menu"
         android:id="@+id/homeFragment"
         />
     <item
         android:title=""
-        android:icon="@drawable/ic_plus"
-        android:id="@+id/plusFragment"
-        />
-    <item
-        android:title=""
-        android:icon="@drawable/ic_okay"
-        android:id="@+id/doneFragment"
+        android:icon="@drawable/icon_btn_popular"
+        android:id="@+id/popular"
         
         />
 </menu>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EEF4ED"
-    tools:context=".homeFragment">
+    tools:context=".homeFragment"
+    android:id="@+id/unpopularPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout_header"
@@ -16,41 +17,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <LinearLayout
-        android:id="@+id/linearLayout_main"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="650dp"
-        android:layout_marginTop="90dp"
-        android:background="#EEF4ED"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        >
+        app:layout_constraintVertical_bias="1.0">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/unpopular_Uvelka"
+        <LinearLayout
+            android:id="@+id/linearLayout_main"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/container_for_town"
-            tools:ignore="MissingConstraints" >
+            android:layout_height="650dp"
+            android:layout_marginTop="90dp"
+            android:background="#EEF4ED"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/unpopular_Uvelka"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/container_for_town"
+                tools:ignore="MissingConstraints">
 
-            <ImageButton
-                android:id="@+id/btn_like"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@android:color/black"
-                android:src="@drawable/icon_btn_gray_heart"
-                tools:layout_editor_absoluteX="269dp"
-                tools:layout_editor_absoluteY="31dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/img_cathedral_vasilia"
+                    android:layout_width="88dp"
+                    android:layout_height="85dp"
+                    android:layout_margin="6dp"
+                    android:layout_marginStart="28dp"
+                    android:src="@drawable/cathedral_vasilia"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
 
-    </LinearLayout>
+                <Button
+                    android:id="@+id/btn_gray_heart"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="#BBC3B2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.955"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <TextView
         android:layout_width="wrap_content"
